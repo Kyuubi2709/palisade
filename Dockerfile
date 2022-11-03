@@ -4,7 +4,7 @@ RUN apk update
 RUN apk add git
 WORKDIR /usr/src/app
 COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile
+RUN yarn install --lock-file
 RUN yarn watch-i18n
 RUN yarn watch-css
 COPY . .
