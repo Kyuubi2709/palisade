@@ -5,7 +5,6 @@ RUN apk add git
 WORKDIR /usr/src
 RUN yarn install --lock-file
 RUN yarn watch-i18n
-RUN yarn watch-css
-COPY . .
+Run yarn build-i18n
 RUN yarn build-css
 RUN yean build
