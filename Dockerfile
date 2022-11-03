@@ -2,8 +2,7 @@
 FROM node:14-alpine AS builder-stage
 RUN apk update
 RUN apk add git
-WORKDIR /usr/src/app
-COPY package.json yarn.lock ./
+WORKDIR /palisade
 RUN yarn install --lock-file
 RUN yarn watch-i18n
 RUN yarn watch-css
