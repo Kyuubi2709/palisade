@@ -8,5 +8,5 @@ RUN npm install -g npm@8.10.0
 RUN yarn install --lockfile
 RUN yarn build-i18n
 Run yarn watch-i18n
-RUN yarn build-css
-RUN yean build
+RUN yarn build
+RUN yean build-css
