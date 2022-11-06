@@ -2,7 +2,7 @@
 FROM node:14-alpine AS builder-stage
 RUN apk update
 RUN apk add git
-WORKDIR /usr/src/app
+WORKDIR /usr/src
 RUN npm install -g npm@8.10.0
 RUN yarn install --lockfile
 RUN yarn build-i18n
